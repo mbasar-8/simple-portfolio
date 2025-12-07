@@ -1,11 +1,10 @@
-<!-- css/style.css -- >
-/* Basic Styling */
+/* style.css */
 body {
   font-family: Arial, sans-serif;
 }
 
 .hero {
-  height: 90vh;
+  height: 100vh;
   background: url('../images/hero.jpg') no-repeat center/cover;
 }
 
@@ -13,6 +12,7 @@ body {
   transform: scale(1.03);
   transition: 0.3s;
 }
+
 html, body {
   height: 100%;
 }
@@ -25,17 +25,19 @@ body {
 footer {
   margin-top: auto;
 }
-.hero {
-  height: 100vh;
-  background-color: white; /* optional */
+
+.intro {
+  color: chocolate;
 }
-.intro{
-    color: chocolate;
+
+.navbar {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
 }
-.logo-img {
-  width: 45px;
-  height: 45px;
+
+.navbar-brand img {
+  width: 45px !important;
+  height: 45px !important;
   object-fit: cover;
   border-radius: 50%;
 }
-
