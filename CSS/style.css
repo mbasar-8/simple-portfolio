@@ -1,0 +1,41 @@
+<!-- css/style.css -- >
+/* Basic Styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 90vh;
+  background: url('../images/hero.jpg') no-repeat center/cover;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+.hero {
+  height: 100vh;
+  background-color: white; /* optional */
+}
+.intro{
+    color: chocolate;
+}
+.logo-img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
