@@ -1,18 +1,11 @@
-/* style.css */
-body {
-  font-family: Arial, sans-serif;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.hero {
-  height: 100vh;
-  background: url('../images/hero.jpg') no-repeat center/cover;
-}
-
-.card:hover {
-  transform: scale(1.03);
-  transition: 0.3s;
-}
-
+/* Layout fix for footer */
 html, body {
   height: 100%;
 }
@@ -20,24 +13,54 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  font-family: Arial, sans-serif;
 }
 
-footer {
-  margin-top: auto;
+/* Navbar */
+.navbar-brand img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
+/* Hero section (index only) */
+.hero-full {
+  min-height: 100vh;
+  background: url('../images/hero.jpg') no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text */
 .intro {
   color: chocolate;
 }
 
-.navbar {
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
+/* Cards */
+.card {
+  transition: 0.3s;
 }
 
-.navbar-brand img {
-  width: 45px !important;
-  height: 45px !important;
-  object-fit: cover;
-  border-radius: 50%;
+.card:hover {
+  transform: scale(1.03);
 }
+
+/* Footer */
+.footer {
+  background: #212529;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+}
+
+.project-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;   /* চাইলে 16/9 দিতে পারো */
+  object-fit: contain;
+  background-color: #f2f2f2;
+}
+
+
